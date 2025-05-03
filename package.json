@@ -1,0 +1,24 @@
+{
+  "name": "task1-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mh-Monzil/ts-task1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mh-Monzil/ts-task1/issues"
+  },
+  "homepage": "https://github.com/Mh-Monzil/ts-task1#readme",
+  "description": "",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
+}
