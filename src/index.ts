@@ -100,3 +100,14 @@ type BookMagazine = Book & Magazine;
 
 //
 //
+
+// Task 5: Function Type
+
+const text = (text: string): void => {
+  const words = text.split("");
+
+  let reverseText: string = words.reverse().join("");
+  console.log(reverseText);
+};
+
+text("hello");
