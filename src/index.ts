@@ -122,3 +122,22 @@ const sum = (...numbers: number[]): number => {
 };
 
 console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
+
+//
+//
+
+// Task 7: Type Assertion and Narrowing
+
+const isStrOrNum = (value: string | number): string | number => {
+  if (typeof value === "string") {
+    return value.length;
+  } else {
+    return value * value;
+  }
+};
+
+console.log(isStrOrNum("hello"));
+console.log(isStrOrNum(2));
+
+//
+//
