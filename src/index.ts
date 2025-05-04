@@ -202,3 +202,15 @@ console.log(
 
 //
 //
+
+// Task 10: Nullish Coalescing Operator
+
+const displayName = (name: string | null | undefined): string => {
+  return `${name ?? "Anonymous"}`;
+};
+
+console.log(displayName(null));
+console.log(displayName("John"));
+
+//
+//
