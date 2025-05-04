@@ -166,3 +166,39 @@ console.log(
     adminLevel: 1,
   })
 );
+
+//
+//
+
+// Task 9: Optional Chaining
+
+type Employee = {
+  name: string;
+  address: {
+    street: string;
+    city: string;
+    state: string;
+    zipCode: string;
+    country: string;
+  };
+};
+
+const getEmployeeCity = (employee: Employee): string => {
+  return employee?.address?.city;
+};
+
+console.log(
+  getEmployeeCity({
+    name: "Hassan",
+    address: {
+      street: "123 Main St",
+      city: "New York",
+      state: "NY",
+      zipCode: "10001",
+      country: "USA",
+    },
+  })
+);
+
+//
+//
