@@ -141,3 +141,28 @@ console.log(isStrOrNum(2));
 
 //
 //
+
+// Task 8: Intersection Types
+
+type User = {
+  name: string;
+  email: string;
+};
+
+type Admin = {
+  adminLevel: number;
+};
+
+type AdminUser = User & Admin;
+
+const describeAdmin = (user: AdminUser): string => {
+  return `Name: ${user.name}, Email: ${user.email}, Admin Level: ${user.adminLevel}`;
+};
+
+console.log(
+  describeAdmin({
+    name: "Hassan",
+    email: "hassan@me.com",
+    adminLevel: 1,
+  })
+);
